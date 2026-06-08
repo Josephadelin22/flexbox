@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Layout - Flexbox vs Grid</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="header-container">
+                <div class="logo">
+                    <h1>My Blog</h1>
+                </div>
+                <div class="header-actions">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="layout-container">
+            <aside class="sidebar-left">
+                <div class="widget">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>Technology</li>
+                        <li>Lifestyle</li>
+                        <li>Travel</li>
+                        <li>Food</li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>Archive</h3>
+                    <ul>
+                        <li>January 2024</li>
+                        <li>February 2024</li>
+                        <li>March 2024</li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <main class="main-content-area">
+                <article class="blog-post featured">
+                    <div class="post-image"></div>
+                    <h2>Understanding Modern CSS Layouts</h2>
+                    <div class="post-meta">January 15, 2024 | 5 min read</div>
+                    <p>CSS Grid and Flexbox are two powerful tools that have revolutionized how we build websites. While both can create complex layouts, each has its unique strengths and ideal use cases. This article explores when to use each approach.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                
+                <article class="blog-post">
+                    <h2>Flexbox: One-Dimensional Mastery</h2>
+                    <div class="post-meta">January 10, 2024 | 3 min read</div>
+                    <p>Flexbox excels at distributing space along a single axis. It's perfect for navigation bars, card components, and aligning items within containers.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                
+                <article class="blog-post">
+                    <h2>CSS Grid: Two-Dimensional Power</h2>
+                    <div class="post-meta">January 5, 2024 | 4 min read</div>
+                    <p>Grid allows simultaneous control over rows and columns, making it ideal for overall page structure, gallery layouts, and complex responsive designs.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                
+                <article class="blog-post">
+                    <h2>Responsive Design Best Practices</h2>
+                    <div class="post-meta">December 28, 2023 | 6 min read</div>
+                    <p>Learn how to combine Flexbox and Grid to create adaptive layouts that work beautifully on all device sizes, from mobile phones to large desktop screens.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+            </main>
+            
+            <aside class="sidebar-right">
+                <div class="widget">
+                    <h3>About the Author</h3>
+                    <div class="author-bio">
+                        <p>Front-end developer passionate about CSS architecture and modern web standards.</p>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3>Popular Posts</h3>
+                    <ul>
+                        <li>Getting Started with Grid</li>
+                        <li>Flexbox Tips and Tricks</li>
+                        <li>Responsive Images Guide</li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>About This Project</h4>
+                    <p>Demonstrating identical layouts using Flexbox and CSS Grid.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 My Blog. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
